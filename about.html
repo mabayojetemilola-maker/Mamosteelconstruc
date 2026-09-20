@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Mamo Steel Construction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <img src="logo.jpg" alt="MSCFE Logo">
+      <div class="logo-text">MSCFE<span>Mamo Steel</span></div>
+    </a>
+    <nav class="nav-links"><a href="index.html" class="">Home</a><a href="services.html" class="">Services</a><a href="about.html" class="active">About</a><a href="contact.html" class="">Contact</a><a class="nav-cta" href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener">Get a quote</a></nav>
+    <button class="hamburger" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener">Get a quote</a></div>
+</header>
+<div class="page-hero">
+  <h1>About Mamo Steel</h1>
+  <p>MSCFE · Abeokuta, Ogun State</p>
+</div>
+<section class="section">
+  <div class="about-grid">
+    <div class="about-photo">
+      <img src="ceo.jpg" alt="CEO — Mamo Steel">
+      <div class="badge">CEO · Steel Construction</div>
+    </div>
+    <div class="about-copy">
+      <div class="section-label">Who we are</div>
+      <h2>Reliable steel. Professional team.</h2>
+      <p>We are a reliable and professional steel construction company, committed to delivering high-quality, durable and cost-effective steel structures for residential, commercial and industrial projects.</p>
+      <p>With a team of skilled engineers, fabricators and technicians, we turn your ideas into strong and lasting structures.</p>
+      <ul>
+        <li>Quality workmanship on every project</li>
+        <li>Professional engineers and fabricators</li>
+        <li>Focus on on-time delivery</li>
+        <li>Customer satisfaction at the centre</li>
+      </ul>
+      <a class="btn btn-orange" href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20to%20work%20with%20Mamo%20Steel" target="_blank" rel="noopener">Talk to us</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>Mamo Steel</strong>
+      <p>Construction and fabrication engineering — strong steel, solid structures, lasting solutions across Ogun State and beyond.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+2348103356220">0810 335 6220</a>
+      <a href="#">18 Bisi Akande Street, off Adalemo, Abeokuta 111102, Ogun State</a>
+      <a href="https://wa.me/2348103356220" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© Mamo Steel Construction and Fabrication Engineering · Abeokuta, Ogun State</div>
+</footer>
+<a class="wa-float" href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = document.getElementById("menuBtn");
+  var m = document.getElementById("mobileMenu");
+  if (!b || !m) return;
+  b.onclick = function (e) {
+    e.preventDefault(); e.stopPropagation();
+    b.classList.toggle("open"); m.classList.toggle("open");
+  };
+  m.querySelectorAll("a").forEach(function (a) {
+    a.onclick = function () { b.classList.remove("open"); m.classList.remove("open"); };
+  });
+});
+</script>
+</body>
+</html>

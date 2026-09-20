@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Mamo Steel Construction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <img src="logo.jpg" alt="MSCFE Logo">
+      <div class="logo-text">MSCFE<span>Mamo Steel</span></div>
+    </a>
+    <nav class="nav-links"><a href="index.html" class="">Home</a><a href="services.html" class="">Services</a><a href="about.html" class="">About</a><a href="contact.html" class="active">Contact</a><a class="nav-cta" href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener">Get a quote</a></nav>
+    <button class="hamburger" id="menuBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener">Get a quote</a></div>
+</header>
+<div class="page-hero">
+  <h1>Contact us</h1>
+  <p>Quotes · Site visits · Project enquiries</p>
+</div>
+<section class="section">
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h2>Get in touch</h2>
+      <div class="info-row"><strong>Phone</strong><span><a href="tel:+2348103356220">0810 335 6220</a></span></div>
+      <div class="info-row"><strong>Address</strong><span>18 Bisi Akande Street, off Adalemo, Abeokuta 111102, Ogun State</span></div>
+      <div class="info-row"><strong>Company</strong><span>Mamo Steel Construction and Fabrication Engineering (MSCFE)</span></div>
+      <div class="contact-actions">
+        <a class="btn btn-wa" href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn btn-orange" href="tel:+2348103356220">Call 0810 335 6220</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h2>Project types</h2>
+      <p style="color:var(--muted);font-weight:300;margin-bottom:12px;">
+        Tell us if you need a warehouse, trusses, underground tank, carport canopy, water tower tank, or full steel building construction.
+      </p>
+      <div class="info-row"><strong>Areas</strong><span>Abeokuta · Ogun State · Nearby regions</span></div>
+      <div class="info-row"><strong>Best for</strong><span>Quotes · Site discussion · Fabrication orders</span></div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>Mamo Steel</strong>
+      <p>Construction and fabrication engineering — strong steel, solid structures, lasting solutions across Ogun State and beyond.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+2348103356220">0810 335 6220</a>
+      <a href="#">18 Bisi Akande Street, off Adalemo, Abeokuta 111102, Ogun State</a>
+      <a href="https://wa.me/2348103356220" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© Mamo Steel Construction and Fabrication Engineering · Abeokuta, Ogun State</div>
+</footer>
+<a class="wa-float" href="https://wa.me/2348103356220?text=Hi%2C%20I%20want%20a%20quote%20from%20Mamo%20Steel" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = document.getElementById("menuBtn");
+  var m = document.getElementById("mobileMenu");
+  if (!b || !m) return;
+  b.onclick = function (e) {
+    e.preventDefault(); e.stopPropagation();
+    b.classList.toggle("open"); m.classList.toggle("open");
+  };
+  m.querySelectorAll("a").forEach(function (a) {
+    a.onclick = function () { b.classList.remove("open"); m.classList.remove("open"); };
+  });
+});
+</script>
+</body>
+</html>
